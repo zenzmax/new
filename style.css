@@ -1,0 +1,45 @@
+body {
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input, button {
+  padding: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+button {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #000;
+}
+tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}

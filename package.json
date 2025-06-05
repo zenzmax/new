@@ -1,0 +1,8 @@
+{
+  "name": "lizenzverwaltung",
+  "version": "1.0.0",
+  "description": "Minimalistische Webapp zur Lizenzverwaltung",
+  "scripts": {
+    "test": "echo 'No tests specified'"
+  }
+}

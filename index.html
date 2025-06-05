@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lizenzverwaltung</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Lizenzverwaltung</h1>
+  <form id="license-form">
+    <input type="text" id="name" placeholder="Lizenzname" required>
+    <input type="date" id="expires" required>
+    <input type="text" id="details" placeholder="Details">
+    <button type="submit">Hinzufügen</button>
+  </form>
+  <table id="license-table">
+    <thead>
+      <tr><th>Name</th><th>Ablaufdatum</th><th>Details</th><th></th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
