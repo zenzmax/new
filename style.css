@@ -43,3 +43,7 @@ tr:nth-child(even) {
   color: #000;
   cursor: pointer;
 }
+
+#download-csv {
+  margin-top: 20px;
+}

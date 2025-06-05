@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('license-form');
   const tableBody = document.querySelector('#license-table tbody');
+  const downloadBtn = document.getElementById('download-csv');
 
   function loadLicenses() {
     const data = JSON.parse(localStorage.getItem('licenses') || '[]');
@@ -19,6 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function saveLicenses(data) {
     localStorage.setItem('licenses', JSON.stringify(data));
+  }
+
+  function downloadCSV() {
+    const data = JSON.parse(localStorage.getItem('licenses') || '[]');
+    let csv = 'Name,Ablaufdatum,Details\n';
+    data.forEach(lic => {
+      const row = [lic.name, lic.expires, lic.details || '']
+        .map(v => '"' + String(v).replace(/"/g, '""') + '"')
+        .join(',');
+      csv += row + '\n';
+    });
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'licenses.csv';
+    a.click();
+    URL.revokeObjectURL(url);
   }
 
   form.addEventListener('submit', e => {
@@ -42,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loadLicenses();
     }
   });
+
+  downloadBtn.addEventListener('click', downloadCSV);
 
   loadLicenses();
 });

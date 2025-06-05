@@ -5,3 +5,5 @@ Diese kleine Webanwendung hilft dabei, Lizenzen lokal im Browser zu verwalten. S
 ## Nutzung
 
 Öffne `index.html` in einem modernen Browser. Lizenzen können hinzugefügt und wieder gelöscht werden. Die Daten werden im `localStorage` des Browsers gespeichert.
+
+Über den Button "CSV herunterladen" lassen sich alle gespeicherten Einträge als Datei exportieren.
