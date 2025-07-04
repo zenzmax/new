@@ -3,25 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lizenzverwaltung</title>
+<title>SC Musterstadt</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1>Lizenzverwaltung</h1>
-  <form id="license-form">
-    <input type="text" id="name" placeholder="Lizenzname" required>
-    <input type="date" id="expires" required>
-    <input type="text" id="details" placeholder="Details">
-    <button type="submit">Hinzufügen</button>
+<header>
+  <h1>SC Musterstadt</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#teams">Mannschaften</a></li>
+      <li><a href="#schedule">Spielplan</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="home">
+  <h2>Willkommen beim SC Musterstadt</h2>
+  <p>Hier findest du alle Informationen rund um unseren Verein.</p>
+</section>
+<section id="teams">
+  <h2>Mannschaften</h2>
+  <ul id="team-list">
+    <li>1. Herren</li>
+    <li>1. Damen</li>
+    <li>A-Junioren</li>
+  </ul>
+</section>
+<section id="schedule">
+  <h2>Nächstes Spiel</h2>
+  <div id="next-match"></div>
+</section>
+<section id="contact">
+  <h2>Kontakt</h2>
+  <form id="contact-form">
+    <input type="text" id="contact-name" placeholder="Dein Name" required>
+    <input type="email" id="contact-email" placeholder="Deine E-Mail" required>
+    <textarea id="contact-message" placeholder="Nachricht" required></textarea>
+    <button type="submit">Senden</button>
   </form>
-  <table id="license-table">
-    <thead>
-      <tr><th>Name</th><th>Ablaufdatum</th><th>Details</th><th></th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
+</section>
+<footer>
+  <p>&copy; 2024 SC Musterstadt</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

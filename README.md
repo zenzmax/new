@@ -1,7 +1,7 @@
-# Lizenzverwaltung Webapp
+# SC Musterstadt
 
-Diese kleine Webanwendung hilft dabei, Lizenzen lokal im Browser zu verwalten. Sie setzt auf ein schlichtes, schwarz-weißes Design.
+Dies ist eine einfache Website für den Fußballverein "SC Musterstadt". Sie enthält Informationen zu Mannschaften, dem nächsten Spiel und einem Kontaktformular.
 
 ## Nutzung
 
-Öffne `index.html` in einem modernen Browser. Lizenzen können hinzugefügt und wieder gelöscht werden. Die Daten werden im `localStorage` des Browsers gespeichert.
+Die Seite besteht nur aus statischem HTML, CSS und JavaScript. Öffne `index.html` in einem Browser, um die Website lokal zu betrachten. Der nächste Spieltermin kann in `script.js` angepasst werden.
